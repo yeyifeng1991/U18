@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b42b80a-aeec-4d38-8446-17851b6be801" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/全栈/swift/swift练习/导航栏1/导航栏1/Assets.xcassets/ys.imageset/92ceca15ly1fbbjtvxibej20rs0rs7s9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈/swift/swift练习/导航栏1/导航栏1/Assets.xcassets/ys.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈/swift/swift练习/导航栏1/导航栏1/Assets.xcassets/zg.imageset/92ceca15ly1fbbjtnmq25j20rs0rsh5g-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈/swift/swift练习/导航栏1/导航栏1/Assets.xcassets/zg.imageset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/全栈/Html学习/移动端布局实战/cash_h5_app_lyh/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/全栈/Html学习/移动端布局实战/cash_h5_app_lyh/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/全栈/swift/swift练习/导航栏1/导航栏1/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/全栈/swift/swift练习/导航栏1/导航栏1/ViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/维托工作/syj_app_h5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/维托工作/syj_app_h5/package-lock.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/全栈/Html学习/移动端布局实战/cash_h5_app_lyh" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="99" />
+    <option name="y" value="23" />
+    <option name="width" value="981" />
+    <option name="height" value="627" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b42b80a-aeec-4d38-8446-17851b6be801" name="Default Changelist" comment="" />
+      <created>1562685966836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562685966836</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="99" y="23" width="981" height="627" extended-state="0" />
+    <layout>
+      <window_info id="Capture Tool" />
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.41214058" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.3962617" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Assistant" visible="true" weight="0.41214058" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+</project>
