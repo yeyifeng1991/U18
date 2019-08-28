@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2F119D8B590FCF0DC15B4645 /* Pods_U18.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EC7A54AFF23D37C3E86EA0 /* Pods_U18.framework */; };
+		EF32190C2316CF6F00BE4C5D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF32190B2316CF6F00BE4C5D /* Global.swift */; };
 		F8DA53DD231572DA0098D781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA53DC231572DA0098D781 /* AppDelegate.swift */; };
 		F8DA53DF231572DA0098D781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA53DE231572DA0098D781 /* ViewController.swift */; };
 		F8DA53E2231572DA0098D781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DA53E0231572DA0098D781 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		69C24651B2FBF8A5A33A73EE /* Pods-U18.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U18.release.xcconfig"; path = "Target Support Files/Pods-U18/Pods-U18.release.xcconfig"; sourceTree = "<group>"; };
 		6E15CB6355D378DE4BC021FD /* Pods-U18.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U18.debug.xcconfig"; path = "Target Support Files/Pods-U18/Pods-U18.debug.xcconfig"; sourceTree = "<group>"; };
 		C3EC7A54AFF23D37C3E86EA0 /* Pods_U18.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U18.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF32190B2316CF6F00BE4C5D /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		F8DA53D9231572DA0098D781 /* U18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = U18.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DA53DC231572DA0098D781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8DA53DE231572DA0098D781 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +48,6 @@
 				6E15CB6355D378DE4BC021FD /* Pods-U18.debug.xcconfig */,
 				69C24651B2FBF8A5A33A73EE /* Pods-U18.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -56,6 +57,147 @@
 				C3EC7A54AFF23D37C3E86EA0 /* Pods_U18.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF3218F52316CA3100BE4C5D /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		EF3218F62316CA3D00BE4C5D /* Procedure */ = {
+			isa = PBXGroup;
+			children = (
+				F8DA53DC231572DA0098D781 /* AppDelegate.swift */,
+				EF32190B2316CF6F00BE4C5D /* Global.swift */,
+				EF3218F72316CA3D00BE4C5D /* Home */,
+				EF3218F82316CA3D00BE4C5D /* Search */,
+				EF3218F92316CA3D00BE4C5D /* Comic */,
+				EF3218FA2316CA3D00BE4C5D /* Cate */,
+				EF3218FB2316CA3D00BE4C5D /* Mine */,
+				EF3218FC2316CA3D00BE4C5D /* Book */,
+				EF3218FD2316CA3D00BE4C5D /* Base */,
+			);
+			path = Procedure;
+			sourceTree = "<group>";
+		};
+		EF3218F72316CA3D00BE4C5D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF3218F82316CA3D00BE4C5D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EF3218F92316CA3D00BE4C5D /* Comic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comic;
+			sourceTree = "<group>";
+		};
+		EF3218FA2316CA3D00BE4C5D /* Cate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cate;
+			sourceTree = "<group>";
+		};
+		EF3218FB2316CA3D00BE4C5D /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		EF3218FC2316CA3D00BE4C5D /* Book */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		EF3218FD2316CA3D00BE4C5D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EF3218FE2316CA3D00BE4C5D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				EF3218FF2316CA3D00BE4C5D /* CollectionViewLayout */,
+				EF3219002316CA3D00BE4C5D /* Refresh */,
+				EF3219012316CA3D00BE4C5D /* EmptyDataSet */,
+				EF3219022316CA3D00BE4C5D /* HairPowder */,
+				EF3219032316CA3D00BE4C5D /* ParallaxHeader */,
+				EF3219042316CA3D00BE4C5D /* NoticeBar */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		EF3218FF2316CA3D00BE4C5D /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		EF3219002316CA3D00BE4C5D /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		EF3219012316CA3D00BE4C5D /* EmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EmptyDataSet;
+			sourceTree = "<group>";
+		};
+		EF3219022316CA3D00BE4C5D /* HairPowder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HairPowder;
+			sourceTree = "<group>";
+		};
+		EF3219032316CA3D00BE4C5D /* ParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ParallaxHeader;
+			sourceTree = "<group>";
+		};
+		EF3219042316CA3D00BE4C5D /* NoticeBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NoticeBar;
+			sourceTree = "<group>";
+		};
+		EF3219052316CA3D00BE4C5D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EF3219062316CA3D00BE4C5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F8DA53D0231572DA0098D781 = {
@@ -79,7 +221,11 @@
 		F8DA53DB231572DA0098D781 /* U18 */ = {
 			isa = PBXGroup;
 			children = (
-				F8DA53DC231572DA0098D781 /* AppDelegate.swift */,
+				EF3218FE2316CA3D00BE4C5D /* Component */,
+				EF3219052316CA3D00BE4C5D /* Extension */,
+				EF3219062316CA3D00BE4C5D /* Model */,
+				EF3218F62316CA3D00BE4C5D /* Procedure */,
+				EF3218F52316CA3100BE4C5D /* Api */,
 				F8DA53DE231572DA0098D781 /* ViewController.swift */,
 				F8DA53E0231572DA0098D781 /* Main.storyboard */,
 				F8DA53E3231572DB0098D781 /* Assets.xcassets */,
@@ -206,6 +352,7 @@
 			files = (
 				F8DA53DF231572DA0098D781 /* ViewController.swift in Sources */,
 				F8DA53DD231572DA0098D781 /* AppDelegate.swift in Sources */,
+				EF32190C2316CF6F00BE4C5D /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
