@@ -39,4 +39,49 @@ extension Notification.Name{
   static let USexTypeDidChange = Notification.Name("USexTypeDidChange")
 }
 
+let screenWidth = UIScreen.main.bounds.width
+let screenHeight = UIScreen.main.bounds.height
+
+var topVC:UIViewController? {
+
+    var resultVC:UIViewController?
+    resultVC = _topVC(UIApplication.shared.keyWindow?.rootViewController)
+    while resultVC?.presentationController != nil {
+        resultVC = _topVC(resultVC?.presentedViewController)
+    }
+    return resultVC;
+
+}
+
+var isIphoneX:Bool{
+    return UI_USER_INTERFACE_IDIOM() == .phone
+        && (max(UIScreen.main.bounds.height, UIScreen.main.bounds.width) == 812
+            || max(UIScreen.main.bounds.height, UIScreen.main.bounds.width) == 896)
+    
+}
+
+
+ //MARK: print
+//MARK: print
+func uLog<T>(_ message: T, file: String = #file, function: String = #function, lineNumber: Int = #line) {
+    #if DEBUG
+    let fileName = (file as NSString).lastPathComponent
+    print("[\(fileName):funciton:\(function):line:\(lineNumber)]- \(message)")
+    #endif
+}
+
+ //MARK:  私有函数
+
+private func _topVC(_ vc:UIViewController?) -> UIViewController? {
+    
+    if vc is UINavigationController{
+        return _topVC((vc as? UINavigationController)?.topViewController)
+    }
+    else if vc is UITabBarController{
+        return _topVC((vc as? UITabBarController)?.selectedViewController)
+    }
+    return vc
+    
+    
+}
 
