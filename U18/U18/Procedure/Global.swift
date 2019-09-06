@@ -61,7 +61,66 @@ var isIphoneX:Bool{
             || max(UIScreen.main.bounds.height, UIScreen.main.bounds.width) == 896)
     
 }
+/*
+ 当有返回值的方法未得到接收和使用时通常会出现图片中的提示：
+ Result of call is unused
+ 在正式编译中不会影响编译结果，但是也妨碍代码的美观整洁，在方法上加上“@discardableResult”就可以取消这个警告
+where Base : UIImageView Base 自带的基础属性
+ 
+ */
 
+extension Kingfisher where Base : UIImageView{
+    @discardableResult
+    public  func setImage(urlString:String?,placeHolder:Placeholder? = UIImage(named: "normal_placeholder_h")) -> RetrieveImageTask {
+        return setImage(with: URL(string: urlString ?? ""),
+                        placeholder: placeHolder,
+                     options: [.transition(.fade(0.5))]
+                         )
+    }
+}
+
+extension Kingfisher where Base: UIButton {
+    @discardableResult
+    public func setImage(urlString: String?, for state: UIControl.State, placeholder: UIImage? = UIImage(named: "normal_placeholder_h")) -> RetrieveImageTask {
+        return setImage(with: URL(string: urlString ?? ""),
+                        for: state,
+                        placeholder: placeholder,
+                        options: [.transition(.fade(0.5))])
+        
+    }
+}
+
+/*
+ ConstraintView  谁在做约束
+ 个 snp 属性的类型就是结构体 ConstraintViewDSL
+ 
+ */
+extension ConstraintView{
+    var usnp:ConstraintAttributesDSL{
+        if #available(iOS 11.0, *) {
+            return self.safeAreaLayoutGuide.snp
+        }
+        else{
+            return self.snp
+        }
+    }
+    
+}
+
+
+extension UICollectionView{
+    func  reloadData(animation :Bool = true) {
+        if animation {
+            reloadData()
+        } else {
+//             去掉隐式动画 解决刷新跳动
+            UIView .performWithoutAnimation {
+                reloadData()
+            }
+        }
+    }
+    
+}
 
  //MARK: print
 //MARK: print
